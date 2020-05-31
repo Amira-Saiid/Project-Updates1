@@ -1,6 +1,5 @@
 <template>
-<div class="container-fluid" style="height:100%">
-      <img src="../logo/backbanner.png" id="bg" alt=""  fill-height  >
+<div class="container-fluid" style="height:100%" id="test">
    <img src="../logo/logotexttt.png" alt="" id="text" class="mx-auto d-block pt-5">
   <h2 class="text-center mt-4 white--text">Sign up for free and experience Notify today</h2>
   <div class="row pt-5">
@@ -348,22 +347,18 @@ export default {
   border-radius: 50px;
 }
 
-#bg{
-  background:cover;
-  
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity:30%;
-
-}
 #text{
 position: relative;
 margin-bottom: -4%;
-width:20%
+
 
 }
+#test{
+  background-image: url('../logo/backbanner.png');
+  background-size: cover;
+  background-repeat: round;
 
+}
 label{
   color: #164e87;
 }

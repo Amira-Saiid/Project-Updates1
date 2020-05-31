@@ -1,11 +1,7 @@
 <template>
-
-  <div class="container-fluid" style="height:100%" id="test" >
-    <img src="../logo/backbanner.png" id="bg" alt=""  fill-height  >
-     <img src="../logo/logotexttt.png" alt="" id="text" class="mx-auto d-block pt-5">
-     
-
-    <div class="row pt-5 d-flex justify-content-center" >
+  <div class="container-fluid" style="height:100%" id="test">
+     <img src="../logo/logotexttt.png" alt="" class="mx-auto d-block pt-5 mt-5">
+    <div class="row pt-5 d-flex justify-content-center mt-5" >
       <div class="col-sm-4"></div>
       <div class="col-sm-3 mt-5 pr-0 pl-0 pb-0" id="form">
         <form @submit.prevent="login" class="pt-5" >
@@ -27,7 +23,7 @@
       <input type="password" v-model="loginInfo.password" class="form-control " style="width:50%" id="p1" required placeholder="Password" />
       </div>
       <div class="d-flex justify-content-center">
-    <v-btn type="submit" id="loginbtn" class="white--text " style="width:30%;" color="#164e87" :loading="loading">Log In</v-btn>
+    <v-btn type="submit" class="white--text " style="width:30%;" color="#164e87" :loading="loading">Log In</v-btn>
       </div>
        </form>
       <p class="d-flex justify-content-center mt-5 mb-0" id="info1">
@@ -44,9 +40,6 @@
     </div>
     <div class="fixed-bottom white--text text-center mb-5">@ 2020 Notify.com</div>
   </div>
-
-
-
 
 </template>
 
@@ -107,23 +100,17 @@ export default {
   border-radius: 50px;
   background: #fff;
 }
-#logo{
-  opacity: 100%;
-  position:relative;
-  width: 10%;
-  height:15%;
-  margin-bottom: -5%;
-  
- 
+#test{
+  background-image: url('../logo/backbanner.png');
+  background-size: cover;
+  background-repeat: round;
 }
+
 #text{
 position: relative;
-margin-bottom: 0%;
-width:20%
+/* margin-bottom: %; */
 
-}
-#test{
-  color: #164e87;
+
 }
 
 #info1{
@@ -136,16 +123,5 @@ width:20%
   background: rgba(211, 211, 211, 0.897)
   
 }
-#bg{
-  background:cover;
-  
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity:30%;
-
-}
-
-
 
 </style>
